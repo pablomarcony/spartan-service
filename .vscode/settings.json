@@ -1,0 +1,6 @@
+{
+    "editor.minimap.enabled": false,
+    "html.format.wrapLineLength": 0,
+    "editor.wordWrapColumn": 120,
+    "diffEditor.wordWrap": "on"
+}

@@ -1,0 +1,20 @@
+<div class="banner-area" style="background-image:url(./assets/images/banner/banner1.jpg)">
+    <div class="banner-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-heading">
+                        <h1 class="banner-title">{{ titlePage }}</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item" [ngClass]="{ 'active': isLast }" [attr.aria-current]="{'page' : isLast }" *ngFor="let breadcrumbItem of breadcrumb; index as i; last as isLast;">
+                                    <a href="{{ breadcrumbItem.link }}">{{ breadcrumbItem.nome }}</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Banner text end -->
+</div><!-- Banner area end -->
